@@ -1,0 +1,24 @@
+{
+  "name": "project_sakura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "backbone": "^1.2.3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgabot89/ProjectSakura.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgabot89/ProjectSakura/issues"
+  },
+  "homepage": "https://github.com/bgabot89/ProjectSakura#readme"
+}
