@@ -45,21 +45,31 @@
   }
 }
 
-#petals {
-	opacity:0.75;
-	/* animation test for spinning */
-	/*-webkit-animation: spin 10s infinite linear;*/
-/*	animation-name: ckw;
-	-webkit-animation: ckw 10s infinite;*/
+#petal32323 {
+	opacity:0.50;
+	position: absolute;
+	 /*animation test for spinning*/
+	-webkit-animation: spin 10s infinite linear;
+	-moz-animation: spin 10s infinite linear;
+	animation: spin 10s infinite linear;
 }
 
-
 @-webkit-keyframes spin {
-	0% {-webkit-transform: rotate(0deg);
-	}
 	100% {-webkit-transform: rotate(360deg);
 	}
 }
+
+@-moz-keyframes spin {
+	100% {-moz-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	100% { -webkit-transform: rotate(360deg);
+		transform:rotate(360deg);
+		}
+	}
+
 
 /*@-webkit-keyframes ckw {
 	 0% {
@@ -85,8 +95,8 @@
     	opacity:0;
         transform: rotate(180deg);
     }
-	}
-*/
+	}*/
+
 
 #text_layer {
 	opacity: 0;
@@ -109,34 +119,34 @@
 
 
 /* For use in FireFox */
-@-moz-keyframes fadeIn { 
-	 0% { 
-		opacity:0;  
-} 
- 100% { 
-		opacity:1; 
+@-moz-keyframes fadeIn {
+	 0% {
+		opacity:0;
+}
+ 100% {
+		opacity:1;
 
-		} 
+		}
 	}
 
 /* For use in Safari/Chrome  */
 @-webkit-keyframes fadeIn {
 	0% {
 		opacity:0;
-	} 
+	}
 	100% {
 	opacity: 1;
 }
 }
 
-@keyframes fadeIn { 
-	0% { 
-	opacity:0;  
-	} 
-	100% 
-	{ 
-	opacity:1; 
-			} 
+@keyframes fadeIn {
+	0% {
+	opacity:0;
+	}
+	100%
+	{
+	opacity:1;
+			}
 }
 
 #clouds {
@@ -199,7 +209,11 @@
 }
 
 h1 {
-	padding-top:30px;
+	padding:100px 0px 0px 0px;
+}
+
+#info {
+	font-color:green;
 }
 #about {
 	text-align: center;
@@ -207,4 +221,3 @@ h1 {
 #skirt:hover{
 	fill:blue;
 }
-

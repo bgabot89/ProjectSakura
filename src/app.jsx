@@ -11,6 +11,10 @@ var Eventlist = require('./eventList');
     title: 'J-POP Summit 2016',
     description: 'Come join various artists from Japan perform live at J-POP Summit 2016!',
     date: '07/22/16 - 07/24/16'
+  }, {
+    title: 'Gazette World Tour 2016',
+    description: 'Come see the popular Japanese metal band, Gazette perform live in the SF Bay Area!',
+    date: '05/1/16'
   }]
 };
 
