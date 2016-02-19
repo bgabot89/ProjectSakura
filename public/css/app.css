@@ -206,18 +206,33 @@
 	margin:-30px -15px 0px 0px;
 	background-color:#e699ff;
 	padding: 0px 20px 20px 0px;
+	text-align: center;
+}
+
+#now {
+	margin:-30px -15px 0px 0px;
+	background-color:#e699ff;
+	padding: 0px 20px 20px 0px;
+	text-align: center;
 }
 
 h1 {
 	padding:100px 0px 0px 0px;
 }
 
+h2 {
+	padding:100px 0px 0px 0px;
+	text-align: center;
+}
+
+#soundcloud_widget {
+	margin-top: 50px;
+}
+
 #info {
 	font-color:green;
 }
-#about {
-	text-align: center;
-}
+
 #skirt:hover{
 	fill:blue;
 }
