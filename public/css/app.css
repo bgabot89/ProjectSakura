@@ -211,9 +211,46 @@
 
 #now {
 	margin:-30px -15px 0px 0px;
-	background-color:#e699ff;
+	background-color:white;
 	padding: 0px 20px 20px 0px;
 	text-align: center;
+}
+#genre {
+	margin:-30px -15px 0px 0px;
+	background-color: #e699ff;
+	padding: 0px 20px 20px 0px;
+	text-align: center;
+}
+
+.about-genre {
+		background-color: #e699ff;
+		padding-bottom: 50px;
+}
+.gen {
+	background-color: #e699ff;
+}
+
+.j-genre {
+	transition: all 1s;
+	transition-timing: ease-in-out;
+}
+
+.j-genre:hover {
+	  transform: rotate(30deg);
+}
+
+#j-traditional {
+	margin-left: 100px;
+	cursor: pointer;
+}
+
+#j-electro {
+	margin-left: 100px;
+	cursor: pointer;
+}
+#j-rap {
+	margin-left: 100px;
+	cursor: pointer;
 }
 
 h1 {
@@ -223,6 +260,11 @@ h1 {
 h2 {
 	padding:100px 0px 0px 0px;
 	text-align: center;
+}
+
+#para {
+	text-align:center;
+	margin: 50px 50px 0px 50px;
 }
 
 #soundcloud_widget {
