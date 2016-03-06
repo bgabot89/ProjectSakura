@@ -1,6 +1,7 @@
 jQuery(function($){
 
-var trackIds = [245189535, 247806970, 100291559];
+//array of track ids. arr[0] = j-pop, arr[1] = j-hiphop, arr[2] = j-electro,
+var trackIds = [245189535, 27052245, 247806970];
 
 var trackPlayCount = 0;
 var currentIndex = 0;
@@ -25,7 +26,6 @@ function musicInfoJelectro() {
   document.getElementById("para").innerHTML =
   "Japanese electro is a subgenre of japanese pop music. Similar to standard electronic music in the us, j-electro uses electronically produced sounds recorded on tape and arranged by the composer to form a musical composition. Because J-electro's origins lie in Japan, J-electro's singers often speak solely in japanese"
 }
-
 
 //function to load soundcloud widget api
 function playTrack(index){
@@ -62,13 +62,15 @@ function playTrack(index){
   function playSong1(){
     currentIndex = 1;
     var nextIndex = currentIndex;
-    playTrack(nextIndex)
+    playTrack(nextIndex);
+    console.log("playing J-hip-hop");
   }
   //will play the following tracks based on the button they click
   function playSong2(){
     currentIndex = 2;
     var nextIndex = currentIndex;
     playTrack(nextIndex)
+    console.log("playing J-electro");
   }
 
   function playPrev(){
@@ -89,14 +91,28 @@ function playTrack(index){
   function jTraditional() {
     playSong0();
   }
-//when the user clicks on the j-electro button, the player will play Miku song
-  function jElectroPlay() {
+  //when the user clicks on the j-hip-hop button, the player will play M-flo song
+  function jRap() {
     playSong1();
   }
-  //when the user clicks on the j-hip-hop button, the player will play M-flo song
-  function jElectroRap() {
+  //when the user clicks on the j-electro button, the player will play Miku song
+  function jElectroPlay() {
     playSong2();
   }
+
+  //this will show a different description for the artist depending on which track is playing
+  function descriptionForArtist() {
+  if (currentIndex == 0) {
+    document.getElementById("md-body").innerHTML = "Chihiro Toki <br> N/A"
+  }
+  else if (currentIndex == 1) {
+    document.getElementById("md-body").innerHTML = "Nujabes <br> BLAAAAHHH"
+  }
+  else if (currentIndex == 2){
+    document.getElementById("md-body").innerHTML = "Hatsune Miku <br> GRRRR"
+  }
+}
+  descriptionForArtist();
 
 // Bind Functions to eventHandlers
 // when current track is finished, soundcloud will play the next track
@@ -112,13 +128,19 @@ function playTrack(index){
 
   $('#j-traditional').on('click', musicInfoJpop);
 
+  $('#j-traditional').on('click', descriptionForArtist);
+
+  $('#j-rap').on('click', jRap);
+
+  $('#j-rap').on('click', musicInfoJrap);
+
+  $('#j-rap').on('click', descriptionForArtist);
+
   $('#j-electro').on('click', jElectroPlay);
 
   $('#j-electro').on('click', musicInfoJelectro);
 
-  $('#j-rap').on('click', jElectroRap);
-
-  $('#j-rap').on('click', musicInfoJrap);
+  $('#j-electro').on('click', descriptionForArtist);
 
   //plays first track of array by default
   playTrack(0);
