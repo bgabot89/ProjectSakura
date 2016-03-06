@@ -278,3 +278,10 @@ h2 {
 #skirt:hover{
 	fill:blue;
 }
+
+#myModalLabel {
+	font-size: 30px;
+}
+.modal-header {
+	background-color: #ffccff;
+}
