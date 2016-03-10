@@ -282,6 +282,46 @@ h2 {
 #myModalLabel {
 	font-size: 30px;
 }
+
 .modal-header {
 	background-color: #ffccff;
 }
+
+#myModal {
+	background-position: fixed;
+}
+
+.svg-sakura .petal {
+	animation-name: petalfall;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes petalfall {
+	0% { fill-opacity: 1; }
+  25% { fill-opacity: 0.75; }
+  50% { -webkit-transform: translateX(-50px); fill-opacity: 0; }
+  100% { fill-opacity: 0 }
+}
+
+@keyframes petalfall {
+  0% { fill-opacity: 1; }
+  25% { transform: translateY (25px); fill-opacity: 0.75; }
+  50% { transform: translateX(-50px); fill-opacity: 0; }
+  100% { fill-opacity: 0 }
+}
+
+/* This will create an animation delay for every single blossom */
+.svg-sakura .petal:nth-child(1) { animation-delay: 0s; }
+.svg-sakura .petal:nth-child(2) { animation-delay: 0.5s; }
+.svg-sakura .petal:nth-child(3) { animation-delay: 1s; }
+.svg-sakura .petal:nth-child(4) { animation-delay: 1.5s; }
+.svg-sakura .petal:nth-child(5) { animation-delay: 2s; }
+.svg-sakura .petal:nth-child(6) { animation-delay: 2.5s; }
+.svg-sakura .petal:nth-child(7) { animation-delay: 3s; }
+.svg-sakura .petal:nth-child(8) { animation-delay: 3.5s; }
+.svg-sakura .petal:nth-child(9) { animation-delay: 4.0s; }
+.svg-sakura .petal:nth-child(10) { animation-delay: 4.5s; }
+.svg-sakura .petal:nth-child(11) { animation-delay: 5.0s; }
+.svg-sakura .petal:nth-child(12) { animation-delay: 5.5s; }
