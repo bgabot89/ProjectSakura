@@ -29,7 +29,7 @@ function showPause() {
 }
 
 //button event handler for pause and play button
-$('#button_path').on("click", function(){
+$('#play_button').on("click", function(){
   //  alert('hello world');
   if (playState == true) {
    document.getElementById('play').style.visibility = "hidden";
@@ -155,7 +155,7 @@ function playTrack(index){
 // when current track is finished, soundcloud will play the next track
   widget.bind(SC.Widget.Events.FINISH, trackFinished);
 // Event handlers when played on toggle
-  $('#button_path').on('click', playToggle);
+  $('#play_button').on('click', playToggle);
 
   $('#back_button').on('click', playPrev);
 

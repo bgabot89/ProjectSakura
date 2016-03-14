@@ -328,12 +328,12 @@ h2 {
 .svg-sakura .petal:nth-child(12) { animation-delay: 5.5s; }
 
 
-#button{
+#play_button{
 	height: 100px;
 	width: 100px;
 }
 
-#button:hover {
+#play_button:hover {
 	cursor: pointer;
 }
 
