@@ -231,13 +231,14 @@
 	background-color: #e699ff;
 }
 
+/* animation for japanese music genres on hover */
 .j-genre {
-	transition: all 1s;
-	transition-timing: ease-in-out;
+	-webkit-transition: all 1s;
+	-webkit-transition-timing: ease-in-out;
 }
 
 .j-genre:hover {
-	  transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
 }
 
 #j-traditional {
