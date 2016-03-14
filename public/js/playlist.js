@@ -3,7 +3,7 @@ jQuery(function($){
 //array of track ids. arr[0] = j-pop, arr[1] = j-hiphop, arr[2] = j-electro,
 var trackIds = [245189535, 27052245, 247806970];
 
-var playState = true;
+var playState = false;
 var trackPlayCount = 0;
 var currentIndex = 0;
 //allows use for soundcloud widget api
