@@ -45,6 +45,31 @@ $('#play_button').on("click", function(){
   }
 });
 
+
+//these functions will revert back the pause/play button back to it's initial state
+$('#j-traditional').click(function() {
+  document.getElementById('play').style.visibility = "hidden";
+  showPause();
+  playState = false;
+  console.log("playState reverted to initial state");
+});
+
+$('#j-rap').click(function() {
+  playState = false;
+  document.getElementById('play').style.visibility = "hidden";
+  showPause();
+  playState = false;
+  console.log("playState reverted to initial state");
+});
+
+$('#j-electro').click(function() {
+  playState = false;
+  document.getElementById('play').style.visibility = "hidden";
+  showPause();
+  playState = false;
+  console.log("playState reverted to initial state");
+});
+
 //functions that will show a certain text when clicked
 function musicInfoJpop() {
   document.getElementById("para").innerHTML =
