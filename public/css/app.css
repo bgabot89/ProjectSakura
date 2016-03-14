@@ -293,10 +293,16 @@ h2 {
 }
 
 .svg-sakura .petal {
+	-webkit-animation: petalfall 7s infinite ease-in;
+	-moz-animation:petalfall 7s infinite ease-in;
+	-ms-animation:petalfall 7s infinite ease-in;
+	animation:petalfall 7s infinite ease-in;
+
+	/*-webkit-animation-name: petalfall;
 	animation-name: petalfall;
 	animation-duration: 7s;
 	animation-iteration-count: infinite;
-	animation-timing-function: ease-in;
+	animation-timing-function: ease-in;*/
 }
 
 @-webkit-keyframes petalfall {
@@ -304,6 +310,27 @@ h2 {
   25% { fill-opacity: 0.75; }
   50% { -webkit-transform: translateX(-50px); fill-opacity: 0; }
   100% { fill-opacity: 0 }
+}
+
+@-moz-keyframes petalfall {
+	0% { fill-opacity: 1; }
+	25% { fill-opacity: 0.75; }
+	50% { -webkit-transform: translateX(-50px); fill-opacity: 0; }
+	100% { fill-opacity: 0 }
+}
+
+@-o-keyframes petalfall {
+	0% { fill-opacity: 1; }
+	25% { fill-opacity: 0.75; }
+	50% { -webkit-transform: translateX(-50px); fill-opacity: 0; }
+	100% { fill-opacity: 0 }
+}
+
+@-ms-keyframes petalfall {
+	0% { fill-opacity: 1; }
+	25% { fill-opacity: 0.75; }
+	50% { -webkit-transform: translateX(-50px); fill-opacity: 0; }
+	100% { fill-opacity: 0 }
 }
 
 @keyframes petalfall {
@@ -327,6 +354,22 @@ h2 {
 .svg-sakura .petal:nth-child(11) { animation-delay: 5.0s; }
 .svg-sakura .petal:nth-child(12) { animation-delay: 5.5s; }
 
+/* This will create an animation delay for every single blossom, for Safari and Opera */
+.svg-sakura .petal:nth-child(1) { -webkit-animation-delay: 0s; }
+.svg-sakura .petal:nth-child(2) { -webkit-animation-delay: 0.5s; }
+.svg-sakura .petal:nth-child(3) { -webkit-animation-delay: 1s; }
+.svg-sakura .petal:nth-child(4) { -webkit-animation-delay: 1.5s; }
+.svg-sakura .petal:nth-child(5) { -webkit-animation-delay: 2s; }
+.svg-sakura .petal:nth-child(6) { -webkit-animation-delay: 2.5s; }
+.svg-sakura .petal:nth-child(7) { -webkit-animation-delay: 3s; }
+.svg-sakura .petal:nth-child(8) { -webkit-animation-delay: 3.5s; }
+.svg-sakura .petal:nth-child(9) { -webkit-animation-delay: 4.0s; }
+.svg-sakura .petal:nth-child(10) { -webkit-animation-delay: 4.5s; }
+.svg-sakura .petal:nth-child(11) { -webkit-animation-delay: 5.0s; }
+.svg-sakura .petal:nth-child(12) { -webkit-animation-delay: 5.5s; }
+
+
+/* Note: from st-7 to st-19 had strokes, manually removed them to fix for safari */
 
 #play_button{
 	height: 100px;
