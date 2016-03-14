@@ -9,8 +9,8 @@ module.exports = React.createClass({
       <div className="thumbnail">
           <div className="caption">
             <h3> {this.props.title} </h3>
-            <p><strong> Description:</strong>{this.props.description}</p>
-            <p><strong> Date:</strong>{this.props.date}</p>
+            <p><strong> Description:</strong> {this.props.description}</p>
+            <p><strong> Date:</strong> {this.props.date}</p>
           </div>
         </div>
     </div>

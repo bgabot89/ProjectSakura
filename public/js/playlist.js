@@ -3,10 +3,47 @@ jQuery(function($){
 //array of track ids. arr[0] = j-pop, arr[1] = j-hiphop, arr[2] = j-electro,
 var trackIds = [245189535, 27052245, 247806970];
 
+var playState = true;
 var trackPlayCount = 0;
 var currentIndex = 0;
 //allows use for soundcloud widget api
 var widget = SC.Widget('soundcloud-widget');
+
+//function will determine if image shown will be play and/or pause
+function playStateButton() {
+  if (playState == true) {
+    console.log('it is playing');
+  }
+}
+playStateButton();
+
+//when this function is called, the pause button will appear
+function showPlay() {
+  document.getElementById('play').style.visibility = "visible";
+}
+
+
+//when this function is called, the pause button will appear
+function showPause() {
+  document.getElementById('pause').style.visibility = "visible";
+}
+
+//button event handler for pause and play button
+$('#button_path').on("click", function(){
+  //  alert('hello world');
+  if (playState == true) {
+   document.getElementById('play').style.visibility = "hidden";
+   showPause();
+   playState = false;
+   console.log('switched to' + ' ' + playState);
+}
+  else if (playState == false){
+   document.getElementById('pause').style.visibility = "hidden";
+   showPlay();
+   playState = true;
+   console.log('switched to' + ' ' + playState);
+  }
+});
 
 //functions that will show a certain text when clicked
 function musicInfoJpop() {
@@ -118,11 +155,11 @@ function playTrack(index){
 // when current track is finished, soundcloud will play the next track
   widget.bind(SC.Widget.Events.FINISH, trackFinished);
 // Event handlers when played on toggle
-  $('#play-toggle').on('click', playToggle);
+  $('#button_path').on('click', playToggle);
 
-  $('#prev').on('click', playPrev);
+  $('#back_button').on('click', playPrev);
 
-  $('#next').on('click', playNext);
+  $('#ff_button').on('click', playNext);
 
   $('#j-traditional').on('click', jTraditional);
 
@@ -144,5 +181,6 @@ function playTrack(index){
 
   //plays first track of array by default
   playTrack(0);
+
 
 });

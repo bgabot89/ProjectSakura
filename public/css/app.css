@@ -1,6 +1,7 @@
 .girl {
-	height: 105%;
-	width: 105%;
+	/*height: 105%;
+	width: 105%;*/
+	background-size: cover;
 }
 
 /*.girl:hover #Layer_10 {
@@ -325,3 +326,43 @@ h2 {
 .svg-sakura .petal:nth-child(10) { animation-delay: 4.5s; }
 .svg-sakura .petal:nth-child(11) { animation-delay: 5.0s; }
 .svg-sakura .petal:nth-child(12) { animation-delay: 5.5s; }
+
+
+#button{
+	height: 100px;
+	width: 100px;
+}
+
+#button:hover {
+	cursor: pointer;
+}
+
+#back_button {
+	height: 100px;
+	width: 100px;
+}
+
+#back_button {
+	cursor:pointer;
+}
+
+#ff_button {
+	height: 100px;
+	width: 100px;
+}
+
+#ff_button {
+	cursor: pointer;
+}
+
+#play {
+	visibility: hidden;
+}
+/*sky color test
+.st0:hover {
+	fill:#990000;
+}*/
+
+/*#soundcloud-widget {
+	display: none;
+}*/
