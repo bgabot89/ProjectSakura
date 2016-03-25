@@ -1,3 +1,13 @@
+
+@font-face{
+	font-family: 'Orbitron-Regular';
+	src: url('/static/css/Orbitron-Regular.ttf');
+}
+
+.st80 {
+	font-family:'Orbitron-Regular';
+}
+
 .girl {
 	/*height: 105%;
 	width: 105%;*/
