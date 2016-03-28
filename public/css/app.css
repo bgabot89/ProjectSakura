@@ -1,422 +1,427 @@
 
-@font-face{
-	font-family: 'Orbitron-Regular';
-	src: url('/static/css/Orbitron-Regular.ttf');
-}
-
-.st80 {
-	font-family:'Orbitron-Regular';
-}
-
-.girl {
-	/*height: 105%;
-	width: 105%;*/
-	background-size: cover;
-}
-
-/*.girl:hover #Layer_10 {
-	fill: blue;
-}*/
-
-
-#top_hair_1_:hover {
-	fill:green;
-}
-
-#hair {
-  -webkit-animation: skew 4s infinite;
-          animation: skew 4s infinite;
-  -webkit-transform: skew(10deg);
-          transform: skew(0deg);
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  }
-
-
-@-webkit-keyframes skew {
-  0% {
-    -webkit-transform: skewX(0deg);
-            transform: skewX(0deg);
-  }
-  100% {
-    -webkit-transform: skewX(-2deg);
-            transform: skewX(-2deg);
-  }
-}
-
-
-@keyframes skew {
-  0% {
-    -webkit-transform: skewX(0deg);
-            transform: skewX(0deg);
-  }
-  100% {
-    -webkit-transform: skewX(-2deg);
-            transform: skewX(-2deg);
-  }
-}
-
-#petal32323 {
-	opacity:0.50;
-	position: absolute;
-	 /*animation test for spinning*/
-	-webkit-animation: spin 10s infinite linear;
-	-moz-animation: spin 10s infinite linear;
-	animation: spin 10s infinite linear;
-}
-
-@-webkit-keyframes spin {
-	100% {-webkit-transform: rotate(360deg);
-	}
-}
-
-@-moz-keyframes spin {
-	100% {-moz-transform: rotate(360deg);
-	}
-}
-
-@keyframes spin {
-	100% { -webkit-transform: rotate(360deg);
-		transform:rotate(360deg);
-		}
+	@font-face{
+		font-family: 'Orbitron-Regular';
+		src: url('/static/css/Orbitron-Regular.ttf');
 	}
 
-
-/*@-webkit-keyframes ckw {
-	 0% {
-        transform: rotate(0deg);
-    }
-    50% {
-    	opacity:0.5;
-    }
-    100% {
-    		opacity: 0;
-        transform: rotate(180deg);
-    }
+	.st80 {
+		font-family:'Orbitron-Regular';
 	}
 
-@keyframes ckw {
-	 0% {
-        transform: rotate(0deg);
-    }
-    50% {
-    	opacity:0.5;
-    }
-    100% {
-    	opacity:0;
-        transform: rotate(180deg);
-    }
+	.girl {
+		/*height: 105%;
+		width: 105%;*/
+		background-size: cover;
+	}
+
+	/*.girl:hover #Layer_10 {
+		fill: blue;
 	}*/
 
 
-#text_layer {
-	opacity: 0;
-	-moz-animation:fadeIn ease-in 1;
-	-webkit-animation:fadeIn ease-in 1; /*calls keyframe fadeIn */
-	animation:fadeIn ease-in 1;
+	#top_hair_1_:hover {
+		fill:green;
+	}
 
-  -moz-animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards; /* after animation is done we remain at last key value */
-	animation-fill-mode: forwards;
-
-	-moz-animation-duration:1s;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-
-	-moz-animation-delay: 1s;
-	-webkit-animation-delay: 1s;
-	animation-delay: 1s;
-}
+	#hair {
+	  -webkit-animation: skew 4s infinite;
+	          animation: skew 4s infinite;
+	  -webkit-transform: skew(10deg);
+	          transform: skew(0deg);
+	  -webkit-animation-direction: alternate;
+	          animation-direction: alternate;
+	  }
 
 
-/* For use in FireFox */
-@-moz-keyframes fadeIn {
-	 0% {
-		opacity:0;
-}
- 100% {
-		opacity:1;
+	@-webkit-keyframes skew {
+	  0% {
+	    -webkit-transform: skewX(0deg);
+	            transform: skewX(0deg);
+	  }
+	  100% {
+	    -webkit-transform: skewX(-2deg);
+	            transform: skewX(-2deg);
+	  }
+	}
 
+
+	@keyframes skew {
+	  0% {
+	    -webkit-transform: skewX(0deg);
+	            transform: skewX(0deg);
+	  }
+	  100% {
+	    -webkit-transform: skewX(-2deg);
+	            transform: skewX(-2deg);
+	  }
+	}
+
+	#petal32323 {
+		opacity:0.50;
+		position: absolute;
+		 /*animation test for spinning*/
+		-webkit-animation: spin 10s infinite linear;
+		-moz-animation: spin 10s infinite linear;
+		animation: spin 10s infinite linear;
+	}
+
+	@-webkit-keyframes spin {
+		100% {-webkit-transform: rotate(360deg);
 		}
 	}
 
-/* For use in Safari/Chrome  */
-@-webkit-keyframes fadeIn {
-	0% {
-		opacity:0;
+	@-moz-keyframes spin {
+		100% {-moz-transform: rotate(360deg);
+		}
 	}
-	100% {
-	opacity: 1;
-}
-}
 
-@keyframes fadeIn {
-	0% {
-	opacity:0;
-	}
-	100%
-	{
-	opacity:1;
+	@keyframes spin {
+		100% { -webkit-transform: rotate(360deg);
+			transform:rotate(360deg);
 			}
-}
+		}
 
-#clouds {
-	position: absolute;
-	-webkit-animation:drift 10s linear infinite forwards;
-	-moz-animation:drift 10s linear infinite forwards;
-	-ms-animation:drift 10s linear infinite forwards;
-	animation: drift 10s linear infinite forwards;
-}
 
-@-webkit-keyframes drift {
-0% {
-	opacity: 1;-webkit-transform: translateX(-10px);
-}
-100% {
-	opacity: 1;-webkit-transform: translateX(100%);}
-}
+	/*@-webkit-keyframes ckw {
+		 0% {
+	        transform: rotate(0deg);
+	    }
+	    50% {
+	    	opacity:0.5;
+	    }
+	    100% {
+	    		opacity: 0;
+	        transform: rotate(180deg);
+	    }
+		}
 
-@-moz-keyframes drift {
-0% {
-	opacity: 1;-moz-transform: translateX(-10px);
+	@keyframes ckw {
+		 0% {
+	        transform: rotate(0deg);
+	    }
+	    50% {
+	    	opacity:0.5;
+	    }
+	    100% {
+	    	opacity:0;
+	        transform: rotate(180deg);
+	    }
+		}*/
+
+
+	#text_layer {
+		opacity: 0;
+		-moz-animation:fadeIn ease-in 1;
+		-webkit-animation:fadeIn ease-in 1; /*calls keyframe fadeIn */
+		animation:fadeIn ease-in 1;
+
+	  -moz-animation-fill-mode: forwards;
+		-webkit-animation-fill-mode: forwards; /* after animation is done we remain at last key value */
+		animation-fill-mode: forwards;
+
+		-moz-animation-duration:1s;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+
+		-moz-animation-delay: 1s;
+		-webkit-animation-delay: 1s;
+		animation-delay: 1s;
 	}
-100% {
-	opacity: 1;-moz-transform: translateX(100%);
-	}
-}
 
-@-o-keyframes drift {
 
-0% {
-	opacity: 1;-o-transform: translateX(-10px);
+	/* For use in FireFox */
+	@-moz-keyframes fadeIn {
+		 0% {
+			opacity:0;
 	}
-100% {
-	opacity: 1;-o-transform: translateX(100%);
-	}
-}
+	 100% {
+			opacity:1;
 
-@-ms-keyframes drift {
-0% {
-	opacity: 1;-ms-transform: translateX(-10px);
-	}
-100% {
-	opacity: 1;-ms-transform: translateX(100%);
-	}
-}
+			}
+		}
 
-@keyframes drift {
+	/* For use in Safari/Chrome  */
+	@-webkit-keyframes fadeIn {
+		0% {
+			opacity:0;
+		}
+		100% {
+		opacity: 1;
+	}
+	}
+
+	@keyframes fadeIn {
+		0% {
+		opacity:0;
+		}
+		100%
+		{
+		opacity:1;
+				}
+	}
+
+	#clouds {
+		position: absolute;
+		-webkit-animation:drift 10s linear infinite forwards;
+		-moz-animation:drift 10s linear infinite forwards;
+		-ms-animation:drift 10s linear infinite forwards;
+		animation: drift 10s linear infinite forwards;
+	}
+
+	@-webkit-keyframes drift {
 	0% {
-		opacity: 1;transform: translateX(-10px);
+		opacity: 1;-webkit-transform: translateX(-10px);
 	}
 	100% {
-		opacity: 1;transform: translateX(100%);
+		opacity: 1;-webkit-transform: translateX(100%);}
 	}
-}
 
-#about {
-	margin:-30px -15px 0px 0px;
-	background-color:#e699ff;
-	padding: 0px 20px 20px 0px;
-	text-align: center;
-}
+	@-moz-keyframes drift {
+	0% {
+		opacity: 1;-moz-transform: translateX(-10px);
+		}
+	100% {
+		opacity: 1;-moz-transform: translateX(100%);
+		}
+	}
 
-#now {
-	margin:-30px -15px 0px 0px;
-	background-color:white;
-	padding: 0px 20px 20px 0px;
-	text-align: center;
-}
-#genre {
-	margin:-30px -15px 0px 0px;
-	background-color: #e699ff;
-	padding: 0px 20px 20px 0px;
-	text-align: center;
-}
+	@-o-keyframes drift {
 
-.about-genre {
+	0% {
+		opacity: 1;-o-transform: translateX(-10px);
+		}
+	100% {
+		opacity: 1;-o-transform: translateX(100%);
+		}
+	}
+
+	@-ms-keyframes drift {
+	0% {
+		opacity: 1;-ms-transform: translateX(-10px);
+		}
+	100% {
+		opacity: 1;-ms-transform: translateX(100%);
+		}
+	}
+
+	@keyframes drift {
+		0% {
+			opacity: 1;transform: translateX(-10px);
+		}
+		100% {
+			opacity: 1;transform: translateX(100%);
+		}
+	}
+
+	#about {
+		margin:-30px 0px 0px 0px;
+		background-color:#e699ff;
+		padding: 0px 20px 20px 0px;
+		text-align: center;
+	}
+
+	#now {
+		margin:-30px 0px 0px 0px;
+		background-color:white;
+		padding: 0px 20px 20px 0px;
+		text-align: center;
+	}
+	#genre {
+		margin:-30px 0px 0px 0px;
 		background-color: #e699ff;
-		padding-bottom: 50px;
-}
-.gen {
-	background-color: #e699ff;
-}
+		padding: 0px 20px 20px 0px;
+		text-align: center;
+	}
 
-/* animation for japanese music genres on hover */
-.j-genre {
-	-webkit-transition: all 1s;
-	-webkit-transition-timing: ease-in-out;
-}
+	.about-genre {
+			background-color: #e699ff;
+			padding-bottom: 50px;
+	}
+	.gen {
+		background-color: #e699ff;
+	}
 
-.j-genre:hover {
-	-webkit-transform: rotate(30deg);
-}
+	/* animation for japanese music genres on hover */
+	.j-genre {
+		-webkit-transition: all 1s;
+		-webkit-transition-timing: ease-in-out;
+	}
 
-#j-traditional {
-	margin-left: 100px;
-	cursor: pointer;
-}
+	.j-genre:hover {
+		-webkit-transform: rotate(30deg);
+	}
 
-#j-electro {
-	margin-left: 100px;
-	cursor: pointer;
-}
-#j-rap {
-	margin-left: 100px;
-	cursor: pointer;
-}
+	#j-traditional {
+		margin-left: 100px;
+		cursor: pointer;
+	}
 
-h1 {
-	padding:100px 0px 0px 0px;
-}
+	#j-electro {
+		margin-left: 100px;
+		cursor: pointer;
+	}
+	#j-rap {
+		margin-left: 100px;
+		cursor: pointer;
+	}
 
-h2 {
-	padding:100px 0px 0px 0px;
-	text-align: center;
-}
+	h1 {
+		padding:100px 0px 0px 0px;
+	}
 
-#para {
-	text-align:center;
-	margin: 50px 50px 0px 50px;
-}
+	h2 {
+		padding:100px 0px 0px 0px;
+		text-align: center;
+	}
 
-#soundcloud_widget {
-	margin-top: 50px;
-}
+	#para {
+		text-align:center;
+		margin: 50px 50px 0px 50px;
+	}
 
-#info {
-	font-color:green;
-}
+	#soundcloud_widget {
+		margin-top: 50px;
+	}
 
-#skirt:hover{
-	fill:blue;
-}
+	#info {
+		font-color:green;
+	}
 
-#myModalLabel {
-	font-size: 30px;
-}
+	#skirt:hover{
+		fill:blue;
+	}
 
-.modal-header {
-	background-color: #ffccff;
-}
+	#myModalLabel {
+		font-size: 30px;
+	}
 
-#myModal {
-	background-position: fixed;
-}
+	.modal-header {
+		background-color: #ffccff;
+	}
 
-.svg-sakura .petal {
-	-webkit-animation: petalfall 7s infinite ease-in;
-	-moz-animation:petalfall 7s infinite ease-in;
-	-ms-animation:petalfall 7s infinite ease-in;
-	animation:petalfall 7s infinite ease-in;
+	#myModal {
+		background-position: fixed;
+	}
 
-	/*-webkit-animation-name: petalfall;
-	animation-name: petalfall;
-	animation-duration: 7s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in;*/
-}
+	.svg-sakura .petal {
+		-webkit-animation: petalfall 7s infinite ease-in;
+		-moz-animation:petalfall 7s infinite ease-in;
+		-ms-animation:petalfall 7s infinite ease-in;
+		animation:petalfall 7s infinite ease-in;
 
-@-webkit-keyframes petalfall {
-	0% { fill-opacity: 1; }
-  25% { fill-opacity: 0.75; }
-  50% { -webkit-transform: translateX(-50px); fill-opacity: 0; }
-  100% { fill-opacity: 0 }
-}
+		/*-webkit-animation-name: petalfall;
+		animation-name: petalfall;
+		animation-duration: 7s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in;*/
+	}
 
-@-moz-keyframes petalfall {
-	0% { fill-opacity: 1; }
-	25% { fill-opacity: 0.75; }
-	50% { -webkit-transform: translateX(-50px); fill-opacity: 0; }
-	100% { fill-opacity: 0 }
-}
+	@-webkit-keyframes petalfall {
+		0% { fill-opacity: 1; }
+	  25% { fill-opacity: 0.75; }
+	  50% { -webkit-transform: translateX(-50px); fill-opacity: 0; }
+	  100% { fill-opacity: 0 }
+	}
 
-@-o-keyframes petalfall {
-	0% { fill-opacity: 1; }
-	25% { fill-opacity: 0.75; }
-	50% { -webkit-transform: translateX(-50px); fill-opacity: 0; }
-	100% { fill-opacity: 0 }
-}
+	@-moz-keyframes petalfall {
+		0% { fill-opacity: 1; }
+		25% { fill-opacity: 0.75; }
+		50% { -webkit-transform: translateX(-50px); fill-opacity: 0; }
+		100% { fill-opacity: 0 }
+	}
 
-@-ms-keyframes petalfall {
-	0% { fill-opacity: 1; }
-	25% { fill-opacity: 0.75; }
-	50% { -webkit-transform: translateX(-50px); fill-opacity: 0; }
-	100% { fill-opacity: 0 }
-}
+	@-o-keyframes petalfall {
+		0% { fill-opacity: 1; }
+		25% { fill-opacity: 0.75; }
+		50% { -webkit-transform: translateX(-50px); fill-opacity: 0; }
+		100% { fill-opacity: 0 }
+	}
 
-@keyframes petalfall {
-  0% { fill-opacity: 1; }
-  25% { transform: translateY (25px); fill-opacity: 0.75; }
-  50% { transform: translateX(-50px); fill-opacity: 0; }
-  100% { fill-opacity: 0 }
-}
+	@-ms-keyframes petalfall {
+		0% { fill-opacity: 1; }
+		25% { fill-opacity: 0.75; }
+		50% { -webkit-transform: translateX(-50px); fill-opacity: 0; }
+		100% { fill-opacity: 0 }
+	}
 
-/* This will create an animation delay for every single blossom */
-.svg-sakura .petal:nth-child(1) { animation-delay: 0s; }
-.svg-sakura .petal:nth-child(2) { animation-delay: 0.5s; }
-.svg-sakura .petal:nth-child(3) { animation-delay: 1s; }
-.svg-sakura .petal:nth-child(4) { animation-delay: 1.5s; }
-.svg-sakura .petal:nth-child(5) { animation-delay: 2s; }
-.svg-sakura .petal:nth-child(6) { animation-delay: 2.5s; }
-.svg-sakura .petal:nth-child(7) { animation-delay: 3s; }
-.svg-sakura .petal:nth-child(8) { animation-delay: 3.5s; }
-.svg-sakura .petal:nth-child(9) { animation-delay: 4.0s; }
-.svg-sakura .petal:nth-child(10) { animation-delay: 4.5s; }
-.svg-sakura .petal:nth-child(11) { animation-delay: 5.0s; }
-.svg-sakura .petal:nth-child(12) { animation-delay: 5.5s; }
+	@keyframes petalfall {
+	  0% { fill-opacity: 1; }
+	  25% { transform: translateY (25px); fill-opacity: 0.75; }
+	  50% { transform: translateX(-50px); fill-opacity: 0; }
+	  100% { fill-opacity: 0 }
+	}
 
-/* This will create an animation delay for every single blossom, for Safari and Opera */
-.svg-sakura .petal:nth-child(1) { -webkit-animation-delay: 0s; }
-.svg-sakura .petal:nth-child(2) { -webkit-animation-delay: 0.5s; }
-.svg-sakura .petal:nth-child(3) { -webkit-animation-delay: 1s; }
-.svg-sakura .petal:nth-child(4) { -webkit-animation-delay: 1.5s; }
-.svg-sakura .petal:nth-child(5) { -webkit-animation-delay: 2s; }
-.svg-sakura .petal:nth-child(6) { -webkit-animation-delay: 2.5s; }
-.svg-sakura .petal:nth-child(7) { -webkit-animation-delay: 3s; }
-.svg-sakura .petal:nth-child(8) { -webkit-animation-delay: 3.5s; }
-.svg-sakura .petal:nth-child(9) { -webkit-animation-delay: 4.0s; }
-.svg-sakura .petal:nth-child(10) { -webkit-animation-delay: 4.5s; }
-.svg-sakura .petal:nth-child(11) { -webkit-animation-delay: 5.0s; }
-.svg-sakura .petal:nth-child(12) { -webkit-animation-delay: 5.5s; }
+	/* This will create an animation delay for every single blossom */
+	.svg-sakura .petal:nth-child(1) { animation-delay: 0s; }
+	.svg-sakura .petal:nth-child(2) { animation-delay: 0.5s; }
+	.svg-sakura .petal:nth-child(3) { animation-delay: 1s; }
+	.svg-sakura .petal:nth-child(4) { animation-delay: 1.5s; }
+	.svg-sakura .petal:nth-child(5) { animation-delay: 2s; }
+	.svg-sakura .petal:nth-child(6) { animation-delay: 2.5s; }
+	.svg-sakura .petal:nth-child(7) { animation-delay: 3s; }
+	.svg-sakura .petal:nth-child(8) { animation-delay: 3.5s; }
+	.svg-sakura .petal:nth-child(9) { animation-delay: 4.0s; }
+	.svg-sakura .petal:nth-child(10) { animation-delay: 4.5s; }
+	.svg-sakura .petal:nth-child(11) { animation-delay: 5.0s; }
+	.svg-sakura .petal:nth-child(12) { animation-delay: 5.5s; }
+
+	/* This will create an animation delay for every single blossom, for Safari and Opera */
+	.svg-sakura .petal:nth-child(1) { -webkit-animation-delay: 0s; }
+	.svg-sakura .petal:nth-child(2) { -webkit-animation-delay: 0.5s; }
+	.svg-sakura .petal:nth-child(3) { -webkit-animation-delay: 1s; }
+	.svg-sakura .petal:nth-child(4) { -webkit-animation-delay: 1.5s; }
+	.svg-sakura .petal:nth-child(5) { -webkit-animation-delay: 2s; }
+	.svg-sakura .petal:nth-child(6) { -webkit-animation-delay: 2.5s; }
+	.svg-sakura .petal:nth-child(7) { -webkit-animation-delay: 3s; }
+	.svg-sakura .petal:nth-child(8) { -webkit-animation-delay: 3.5s; }
+	.svg-sakura .petal:nth-child(9) { -webkit-animation-delay: 4.0s; }
+	.svg-sakura .petal:nth-child(10) { -webkit-animation-delay: 4.5s; }
+	.svg-sakura .petal:nth-child(11) { -webkit-animation-delay: 5.0s; }
+	.svg-sakura .petal:nth-child(12) { -webkit-animation-delay: 5.5s; }
 
 
-/* Note: from st-7 to st-19 had strokes, manually removed them to fix for safari */
+	/* Note: from st-7 to st-19 had strokes, manually removed them to fix for safari */
 
-#play_button{
-	height: 100px;
-	width: 100px;
-}
+	#play_button{
+		height: 100px;
+		width: 100px;
+	}
 
-#play_button:hover {
-	cursor: pointer;
-}
+	#play_button:hover {
+		cursor: pointer;
+	}
 
-#back_button {
-	height: 100px;
-	width: 100px;
-}
+	#back_button {
+		height: 100px;
+		width: 100px;
+	}
 
-#back_button {
-	cursor:pointer;
-}
+	#back_button {
+		cursor:pointer;
+	}
 
-#ff_button {
-	height: 100px;
-	width: 100px;
-}
+	#ff_button {
+		height: 100px;
+		width: 100px;
+	}
 
-#ff_button {
-	cursor: pointer;
-}
+	#ff_button {
+		cursor: pointer;
+	}
 
-#play {
-	visibility: hidden;
-}
-/*sky color test
-.st0:hover {
-	fill:#990000;
-}*/
+	#play {
+		visibility: hidden;
+	}
 
-/*#soundcloud-widget {
-	display: none;
-}*/
+	.rowWithFullWidth {
+	    margin-left: 0 !important;
+	    margin-right: 0 !important;
+	}
+	/*sky color test
+	.st0:hover {
+		fill:#990000;
+	}*/
+
+	/*#soundcloud-widget {
+		display: none;
+	}*/
