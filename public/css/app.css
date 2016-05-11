@@ -496,3 +496,7 @@
 		display: none;
 		/*padding-top: 100px;*/
 	}
+
+	#cities {
+		padding: 50px 0px 100px 0px;
+	}
