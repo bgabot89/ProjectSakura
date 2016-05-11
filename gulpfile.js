@@ -30,7 +30,7 @@ gulp.task('default', function() {
       .bundle()
       .on('error', gutil.log.bind(gutil, 'Browserify Error'))
       .pipe(source('main.js'))
-      .pipe(gulp.dest('./'));
+      .pipe(gulp.dest('./public/js/'));
   };
   build();
   bundler.on('update', build);

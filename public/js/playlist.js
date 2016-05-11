@@ -94,7 +94,7 @@ function playTrack(index){
   widget.load(
   "https://api.soundcloud.com/tracks/" + trackIds[index],
   {
-    auto_play: true,
+    auto_play: false,
     show_artwork: false,
     liking: false,
     sharing: false,
@@ -203,6 +203,7 @@ function playTrack(index){
   $('#j-electro').on('click', musicInfoJelectro);
 
   $('#j-electro').on('click', descriptionForArtist);
+
 
   //plays first track of array by default
   playTrack(0);

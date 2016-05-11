@@ -172,16 +172,25 @@
 	0% {
 		opacity: 1;-webkit-transform: translateX(-10px);
 	}
+
+	50% {
+		opacity: 0.75;
+			}
+
 	100% {
-		opacity: 1;-webkit-transform: translateX(100%);}
+		opacity: 0.25;-webkit-transform: translateX(-100%);}
 	}
 
 	@-moz-keyframes drift {
 	0% {
 		opacity: 1;-moz-transform: translateX(-10px);
 		}
+		50% {
+			opacity: 0.75;
+				}
+
 	100% {
-		opacity: 1;-moz-transform: translateX(100%);
+		opacity: 0.25;-moz-transform: translateX(-100%);
 		}
 	}
 
@@ -190,8 +199,13 @@
 	0% {
 		opacity: 1;-o-transform: translateX(-10px);
 		}
+
+		50% {
+			opacity: 0.75;
+				}
+
 	100% {
-		opacity: 1;-o-transform: translateX(100%);
+		opacity: 0.25;-o-transform: translateX(-100%);
 		}
 	}
 
@@ -199,8 +213,12 @@
 	0% {
 		opacity: 1;-ms-transform: translateX(-10px);
 		}
+		50% {
+			opacity: 0.75;
+				}
+
 	100% {
-		opacity: 1;-ms-transform: translateX(100%);
+		opacity: 0.25;-ms-transform: translateX(-100%);
 		}
 	}
 
@@ -208,8 +226,11 @@
 		0% {
 			opacity: 1;transform: translateX(-10px);
 		}
+		50% {
+			opacity: 0.75;
+				}
 		100% {
-			opacity: 1;transform: translateX(100%);
+			opacity: 0.25;transform: translateX(-100%);
 		}
 	}
 
@@ -413,9 +434,24 @@
 		visibility: hidden;
 	}
 
-	.rowWithFullWidth {
+	.rowWithFullWidth, .genrerow {
 	    margin-left: 0 !important;
 	    margin-right: 0 !important;
+	}
+
+	.rowWithFullWidth{
+		/*margin-top: 700px;*/
+	}
+
+	#copyright {
+	background-color: black;
+	height: 100px;
+	}
+
+	#copy-pp {
+	padding-top: 40px;
+	color: white;
+	font-size: 17px;
 	}
 	/*sky color test
 	.st0:hover {
@@ -425,3 +461,38 @@
 	/*#soundcloud-widget {
 		display: none;
 	}*/
+
+	.map {
+	  width: 50%;
+	  height: 0;
+	  margin: 0 auto;
+	  padding-top: 50%;
+	  position: relative;
+	}
+
+	#map_wrapper {
+    height: 400px;
+		display: block;
+}
+
+	#map_canvas {
+    width: 75%;
+    height: 100%;
+		margin: 0 auto;
+	}
+
+	#map_canvas2 {
+		width: 75%;
+		height:100%;
+		margin: 0 auto;
+		display: none;
+		/*padding-top: 100px;*/
+	}
+
+	#map_canvas3 {
+		width: 75%;
+		height:100%;
+		margin: 0 auto;
+		display: none;
+		/*padding-top: 100px;*/
+	}

@@ -10,18 +10,27 @@
 <script src="http://w.soundcloud.com/player/api.js"></script>
 <script src="/static/js/playlist.js"></script>
 <script src="/static/js/music.js"></script>
+<script src="/static/js/locations.js"></script>
 
 <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO5ewDG5UAuVKsbhEo4NkEDg5TpTf9wM4&callback=initMap"
+async defer></script>
+
+<!-- https://maps.googleapis.com/maps/api/place/radarsearch/json?parameters
+
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&rankby=distance&types=food&key=AIzaSyBO5ewDG5UAuVKsbhEo4NkEDg5TpTf9wM4 -->
+
 <div class="girl">
   <?xml version="1.0" encoding="utf-8"?>
   <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
   <svg version="1.1" class="svg-sakura" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 viewBox="0 0 3458.3 1816" style="enable-background:new 0 0 3458.3 1816;" xml:space="preserve">
   <style type="text/css">
-  	.st0{fill:#3DF4F9;}
+  	.st0{fill:#3adbd7;}
   	.st1{fill:#C1215F;}
   	.st2{fill:#9ABE2B;}
   	.st3{fill:#98A0A4;}
@@ -123,15 +132,15 @@
   <g id="landscape">
   	<polygon class="st2" points="-49.6,854.7 3458.3,854.7 3458.3,1826.4 -80.3,1826.4 	"/>
   </g>
+  <g id="clouds">
+    <ellipse class="st6" cx="456.8" cy="158.2" rx="215.5" ry="71.3"/>
+    <ellipse class="st6" cx="3220.3" cy="504.8" rx="176.6" ry="58.4"/>
+  </g>
   <g id="mountain_1">
   	<polygon class="st3" points="1430.8,858.3 1993.4,172.6 2497.6,858.3 	"/>
   	<polygon class="st4" points="1993.4,172.6 1993.4,858.3 1430.8,858.3 	"/>
   	<path class="st5" d="M1886.7,289.8c-43.2,55.3-4.3,47.2,43.3,5.9c18.5-16.1,43.4,66.6,55.9,66.6s20.8-48.6,44.4-39.4
   		c37,14.5,96.5,21.5,44-41.3c-5.9-7.1-85.5-116.3-85.5-116.3L1886.7,289.8z"/>
-  </g>
-  <g id="clouds">
-  	<ellipse class="st6" cx="456.8" cy="158.2" rx="215.5" ry="71.3"/>
-  	<ellipse class="st6" cx="3220.3" cy="504.8" rx="176.6" ry="58.4"/>
   </g>
   <!--These are the petals, in total there are 12 petals in total -->
   <g id="petals_1_" class="petals">
@@ -2962,6 +2971,7 @@
   		c8.1,21.9,13.9,40.3,18,56c7.9,32.1,8.6,54.6,7,71.4c-1.2,10.4-3.4,20-5.8,30.1c-0.4,1.5-0.7,2.9-1,4.2c1.4-2.6,2.7-5.3,3.9-8
   		c17.6-38.7,19-82,13.3-122.7c0,0,0,0,0,0c-10.3-77.3-44.4-148-44.4-148"/>
   </g>
+
 </svg>
 
 </div>
@@ -2969,10 +2979,31 @@
 <h1> What is Project Sakura? </h1>
 <p1 id="info"> Project Sakura is an application to help find Japanese Concerts and music festivals around your area </p>
 </div>
-   <h2> Events </h2>
 
+<h2> Select Your City </h2>
+<!--Buttons to show which events you'd like to see -->
+<div class="text-center">
+  <div class="col-lg-4">
+    <button type="button" id="sf" class="btn btn-primary">San Francisco</button>
+  </div>
+  <div class="col-lg-4">
+    <button type="button" id="ny" class="btn btn-primary">New York</button>
+  </div>
+  <div class="col-lg-4">
+    <button type="button" id="la" class="btn btn-primary">Los Angeles</button>
+  </div>
+
+
+  <!-- <div id="map" class="map"></div> -->
+  <div id ="map_wrapper">
+    <div id ="map_canvas" class="mapping"></div>
+    <!-- <div id ="map_canvas2" class="mapping"></div>
+    <div id ="map_canvas3" class="mapping"></div> -->
+  </div>
+</div>
+<h2> Events </h2>
 <!--React.js data goes here -->
- <div class="row rowWithFullWidth">
+<div class="row rowWithFullWidth">
 </div>
 <script src="/static/js/main.js"></script>
 
@@ -2981,7 +3012,7 @@
 <h1> Select a Genre to listen to </h1>
 <p> Want to attend a concert but don't know a certain genre? Click on these buttons to listen to a certain genre </p>
 </div>
-<div class="row rowWithFullWidth">
+<div class="row genrerow">
 <div id = "" class = "gen col-md-4 col-sm-4">
 <img id = "j-traditional" class= "j-genre" src="/static/css/j-pop-t.png" width= "170px" height="200px">
 </div>
@@ -3090,5 +3121,9 @@
   <p id="para">
     </p>
 </div>
+<div id="copyright" class="text-center">
+  <p id="copy-pp"> ©2016 Illustrated & Developed by Brian Gabot, All rights Reserved </p>
+</div>
+
 </body>
 </html>

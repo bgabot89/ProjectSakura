@@ -11,6 +11,7 @@ module.exports = React.createClass({
             <h3> {this.props.title} </h3>
             <p><strong> Description:</strong> {this.props.description}</p>
             <p><strong> Date:</strong> {this.props.date}</p>
+            <p><strong> Address:</strong> {this.props.address}</p>
           </div>
         </div>
     </div>
