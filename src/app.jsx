@@ -25,7 +25,7 @@ var Eventlist = require('./eventList');
     address: '1515 Broadway at West 44th St, New York, New York 10036'
   }, {
     title: 'Waku Waku + NYC',
-    description: 'Come see the popular Japanese metal band, Gazette perform live in the SF Bay Area!',
+    description: 'Attend Waku Waku a japanese pop culture festival in New York. Waku Waku +NYC brings together the worlds of anime, manga, music, food, film, and fashion inside Brooklyn’s Greenpoint and Williamsburg neighborhoods.',
     date: '08/29/16 - 08/30/16',
     address: '72 Noble St, Brooklyn, NY 11222'
   },{

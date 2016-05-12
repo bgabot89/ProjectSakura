@@ -1,4 +1,5 @@
 var React = require('react');
+
 // Define a `class` in this class Event
 module.exports = React.createClass({
   // Define our render method.  The render method is the only required method
