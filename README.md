@@ -1,4 +1,4 @@
-# ProjectSakura
+# Project Sakura
 Project Sakura is an application to help users find Japanese concerts in their area as well as discover new types of Japanese music.
 
 #Stack
