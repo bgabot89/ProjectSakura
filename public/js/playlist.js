@@ -1,7 +1,7 @@
 jQuery(function($){
 
 //array of track ids. arr[0] = j-pop, arr[1] = j-hiphop, arr[2] = j-electro,
-var trackIds = [245189535, 27052245, 247806970];
+var trackIds = [245189535, 27052245, 247806970, 68121442];
 
 var playState = false;
 var trackPlayCount = 0;
@@ -21,7 +21,6 @@ playStateButton();
 function showPlay() {
   document.getElementById('play').style.visibility = "visible";
 }
-
 
 //when this function is called, the pause button will appear
 function showPause() {
@@ -70,31 +69,20 @@ $('#j-electro').click(function() {
   console.log("playState reverted to initial state");
 });
 
-//functions that will show a certain text when clicked
-function musicInfoJpop() {
-  document.getElementById("para").innerHTML =
-  "J-pop is an abbreviation for Japanese. J-pop is probably the hardest genre of Japanese music to categorize or describe. As is the case for 'pop music' in the United States, a great deal of different sounds tend to fall under this label. A lot of the bands tend to have a cutesy, 'bubble-gum' pop sound while others tend to exhibit a more edgy dance, r&b, or funk sound. The teen idols of Japan are just as big (if not bigger) as the Britney Spears and Nsync's of the U.S. The members of bands such as Morning Musume, Tanpopo, Luna Sea, and Da Pump are worshiped as pop culture icons."
-}
-
-musicInfoJpop();
-
-function musicInfoJrap() {
-  document.getElementById("para").innerHTML =
-  "Japanese hip-hop is a subgenre of japanese music. Japanese hip hop generally tends to be most directly influenced by old school hip hop, taking from the era's catchy beats, dance culture, and overall fun and carefree nature and incorporating it into their music."
-}
-
-
-function musicInfoJelectro() {
-  document.getElementById("para").innerHTML =
-  "Japanese electro is a subgenre of japanese pop music. Similar to standard electronic music in the us, j-electro uses electronically produced sounds recorded on tape and arranged by the composer to form a musical composition. Because J-electro's origins lie in Japan, J-electro's singers often speak solely in japanese"
-}
+$('#j-rock').click(function() {
+  playState = false;
+  document.getElementById('play').style.visibility = "hidden";
+  showPause();
+  playState = false;
+  console.log("playState reverted to initial state");
+});
 
 //function to load soundcloud widget api
 function playTrack(index){
   widget.load(
   "https://api.soundcloud.com/tracks/" + trackIds[index],
   {
-    auto_play: false,
+    auto_play: true,
     show_artwork: false,
     liking: false,
     sharing: false,
@@ -135,6 +123,14 @@ function playTrack(index){
     console.log("playing J-electro");
   }
 
+  //will play the following tracks based on the button they click
+  function playSong3(){
+    currentIndex = 3;
+    var nextIndex = currentIndex;
+    playTrack(nextIndex)
+    console.log("playing J-Rock");
+  }
+
   function playPrev(){
     var nextIndex = currentIndex - 1;
     if (nextIndex < 0) {
@@ -152,6 +148,7 @@ function playTrack(index){
   //when the user clicks on the j-electro button, the player will play Miku song
   function jTraditional() {
     playSong0();
+    console.log('playing song1');
   }
   //when the user clicks on the j-hip-hop button, the player will play M-flo song
   function jRap() {
@@ -161,6 +158,12 @@ function playTrack(index){
   function jElectroPlay() {
     playSong2();
   }
+
+  //when the user clicks on the j-rock button, the player will play J-rock song
+  function jRock() {
+    playSong3();
+  }
+
 
   //this will show a different description for the artist depending on which track is playing
   function descriptionForArtist() {
@@ -173,8 +176,40 @@ function playTrack(index){
   else if (currentIndex == 2){
     document.getElementById("md-body").innerHTML = "Hatsune Miku <br> <img src = '/static/css/miku.jpg' height='200' width='200'> <br> Hatsune Miku is a humanoid persona voiced by a singing voice synthesizer application named Vocaloid. She is portrayed as a teenage girl with long turqouise twintails"
   }
+  else if (currentIndex == 3){
+    document.getElementById("md-body").innerHTML = "Asian Kung-Fu Generation <br> <img src = '/static/css/kung-fu.jpg' height='200' width='200'> <br> Asian Kung-Fu Generation is a japanese rock band in Yokohama, Japan. The band's musical style is influenced by seminal Western punk and alternative rock acts in conjunction with their own local Japanese indie rock background."
+  }
 }
   descriptionForArtist();
+
+  //this will display the name of the song playing on the document
+  function SongName() {
+    if (currentIndex == 0) {
+      document.getElementById("song").innerHTML = "Sakura Iro No Yume"
+    }
+    else if (currentIndex == 1) {
+      document.getElementById("song").innerHTML = "Shiki No Uta"
+    }
+    else if (currentIndex == 2){
+      document.getElementById("song").innerHTML = "Melody Line"
+    }
+    else if (currentIndex == 3){
+      document.getElementById("song").innerHTML = "Kimi to iu Hana"
+    }
+
+  }
+
+  SongName();
+
+  function genreDescription() {
+    $('.learn-more').on('click', function(e) {
+      e.preventDefault();
+      $('.genre-text').show();
+    });
+};
+
+genreDescription();
+
 
 // Bind Functions to eventHandlers
 // when current track is finished, soundcloud will play the next track
@@ -188,21 +223,29 @@ function playTrack(index){
 
   $('#j-traditional').on('click', jTraditional);
 
-  $('#j-traditional').on('click', musicInfoJpop);
-
   $('#j-traditional').on('click', descriptionForArtist);
+
+  $('#j-traditional').on('click', SongName);
 
   $('#j-rap').on('click', jRap);
 
-  $('#j-rap').on('click', musicInfoJrap);
-
   $('#j-rap').on('click', descriptionForArtist);
+
+  $('#j-rap').on('click', SongName);
 
   $('#j-electro').on('click', jElectroPlay);
 
-  $('#j-electro').on('click', musicInfoJelectro);
+  $('#j-electro').on('click', SongName);
 
   $('#j-electro').on('click', descriptionForArtist);
+
+  $('#j-rock').on('click', jRock);
+
+  $('#j-rock').on('click', SongName);
+
+  $('#j-rock').on('click', descriptionForArtist);
+
+  $('.learn-more').on('click', genreDescription);
 
 
   //plays first track of array by default

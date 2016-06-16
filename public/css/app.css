@@ -9,19 +9,16 @@
 	}
 
 	.girl {
-		/*height: 105%;
-		width: 105%;*/
 		background-size: cover;
 	}
 
-	/*.girl:hover #Layer_10 {
-		fill: blue;
-	}*/
-
-
-	#top_hair_1_:hover {
-		fill:green;
+	p, p1 {
+		font-size: 16px;
 	}
+
+	/*#top_hair_1_:hover {
+		fill:green;
+	}*/
 
 	#hair {
 	  -webkit-animation: skew 4s infinite;
@@ -237,7 +234,7 @@
 	#about {
 		margin:-30px 0px 0px 0px;
 		background-color:#e699ff;
-		padding: 0px 20px 20px 0px;
+		padding: 0px 20px 50px 0px;
 		text-align: center;
 	}
 
@@ -262,37 +259,40 @@
 		background-color: #e699ff;
 	}
 
-	/* animation for japanese music genres on hover */
-	.j-genre {
-		-webkit-transition: all 1s;
-		-webkit-transition-timing: ease-in-out;
-	}
-
-	.j-genre:hover {
-		-webkit-transform: rotate(30deg);
-	}
-
 	#j-traditional {
-		margin-left: 100px;
+		/*margin-left: 100px;*/
 		cursor: pointer;
 	}
 
 	#j-electro {
-		margin-left: 100px;
+		/*margin-left: 100px;*/
 		cursor: pointer;
 	}
+
 	#j-rap {
-		margin-left: 100px;
+		/*margin-left: 100px;*/
 		cursor: pointer;
 	}
 
 	h1 {
-		padding:100px 0px 0px 0px;
+		padding:100px 0px 50px 0px;
+	}
+
+	#about-artist {
+		padding: 25px 0px 50px 0px;
+	}
+
+	#now-playing {
+		padding-bottom: -50px;
 	}
 
 	h2 {
 		padding:100px 0px 0px 0px;
 		text-align: center;
+	}
+
+	#city-description {
+		margin: 50px 0px 50px 0px;
 	}
 
 	#para {
@@ -434,13 +434,13 @@
 		visibility: hidden;
 	}
 
-	.rowWithFullWidth, .genrerow {
+	.rowWithFullWidth, .genrerow{
 	    margin-left: 0 !important;
 	    margin-right: 0 !important;
 	}
 
-	.rowWithFullWidth{
-		/*margin-top: 700px;*/
+	.react-data {
+			margin-top: 120px;
 	}
 
 	#copyright {
@@ -499,4 +499,305 @@
 
 	#cities {
 		padding: 50px 0px 100px 0px;
+	}
+
+	.cities {
+		margin-bottom: 50px;
+	}
+
+	.caption:hover {
+		background-color: #eee;
+		cursor: pointer;
+	}
+
+	.action-button {
+		position: relative;
+		padding: 10px 40px;
+		margin: 0px 50px 50px 0px;
+		border-radius: 10px;
+		font-size: 25px;
+		color: #FFF;
+		text-decoration: none !important;
+	}
+
+	.action-button:hover {
+		color: #FFF;
+		cursor: pointer;
+	}
+
+	.action-button:active {
+		transform: translate(0px,5px);
+		-webkit-transform: translate(0px,5px);
+		border-bottom: 1px solid;
+	}
+
+	.animate {
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+  }
+
+	.blue {
+		background-color: #3498DB;
+		border-bottom: 5px solid #2980B9;
+		text-shadow: 0px -2px #2980B9;
+	}
+
+	.red {
+		background-color: #E74C3C;
+		border-bottom: 5px solid #BD3E31;
+		text-shadow: 0px -2px #BD3E31;
+	}
+
+	.green {
+		background-color: #82BF56;
+		border-bottom: 5px solid #669644;
+		text-shadow: 0px -2px #669644;
+	}
+
+	.yellow {
+		background-color: #FFDD46;
+		border-bottom: 5px solid #b4991f;
+		text-shadow: 0px -2px #b4991f;
+	}
+
+	#map_wrapper {
+		margin-top: 100px;
+	}
+
+	#song {
+		font-size: 30px;
+	}
+
+	/*Animation for icons */
+	.music-icon:hover #earphones_miku {
+	  -webkit-animation: turn 1s;
+	          animation: turn 1s;
+	  -webkit-transform: turn(25deg);
+	          transform: turn(0deg);
+	  -webkit-animation-direction: alternate;
+	          animation-direction: alternate;
+  }
+
+	.music-icon:hover #skin {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	.music-icon:hover #eyes {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	.music-icon:hover #miku_hair {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	.music-icon:hover #pigtails_x5F_miku {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	.music-icon:hover #miku_x5F_ornaments {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+/*Animation for hiphop icon*/
+	.music-icon:hover #Dollar_Sign {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	.music-icon:hover #chains {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	.music-icon:hover #hip_hop_hair {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	.music-icon:hover #hip_hop_beard {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	/*J-rock svg*/
+	.music-icon:hover #sunglasses_j-rock {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	.music-icon:hover #moustache_j-rock {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	.music-icon:hover #beard_j-rock {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+
+	.music-icon:hover #HAT {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	/*j-pop animation*/
+	.music-icon:hover #jpop_hair_base {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	.music-icon:hover #pigtails_jpop {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	.music-icon:hover #bowties {
+	-webkit-animation: turn 1s;
+					animation: turn 1s;
+	-webkit-transform: turn(25deg);
+					transform: turn(0deg);
+	-webkit-animation-direction: alternate;
+					animation-direction: alternate;
+	}
+
+	@-webkit-keyframes turn {
+	  0% {
+	    -webkit-transform: rotate(-2deg);
+	            transform: rotate(-2deg);
+	  }
+		50% {
+	    -webkit-transform: rotate(0deg);
+	            transform: rotate(0deg);
+	  }
+	  100% {
+	    -webkit-transform: rotate(-5deg);
+	            transform: rotate(-5deg);
+	  }
+	}
+
+ .music-icon:hover .music_note {
+		-webkit-animation:melody 1s infinite ease-in;
+		-moz-animation:melody 1s infinite ease-in;
+		-ms-animation:melody 1s infinite ease-in;
+		animation:melody 1s infinite ease-in;
+	}
+
+	@-webkit-keyframes melody {
+		0% { fill-opacity: 0; }
+		50% { fill-opacity: 0.5 }
+		100% { fill-opacity: 1 }
+	}
+
+	.svg-music .music_note:nth-child(1) { animation-delay: 0s; }
+	.svg-music .music_note:nth-child(2) { animation-delay: 0.5s; }
+	.svg-music .music_note:nth-child(3) { animation-delay: 1s; }
+
+	#musical_notes {
+		opacity: 0;
+	}
+
+	.music-icon:hover #musical_notes {
+		opacity: 1;
+	}
+
+	@keyframes turn {
+	  0% {
+	    -webkit-transform: rotate(-2deg);
+	            transform: rotate(-2deg);
+	  }
+		50% {
+			-webkit-transform: rotate(0deg);
+							transform: rotate(0deg);
+		}
+	  100% {
+	    -webkit-transform: rotate(-1deg);
+	            transform: rotate(-1deg);
+	  }
+	}
+
+	.music-icon:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+	}
+
+	.music-genres {
+		background-color: #e699ff;
+		padding-bottom: 100px;
+	}
+
+	.genre-text {
+		background-color: white;
+		padding-bottom: 30px;
+		display: none;
+	}
+
+	.learn-more:hover {
+		text-decoration: underline;
+		color: blue
 	}

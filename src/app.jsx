@@ -7,32 +7,38 @@ var Eventlist = require('./eventList');
     title: 'Miku Expo',
     description: 'Watch Hatsune Miku Live in Concert',
     date: '03/3/16',
-    address: '982 Market St, San Francisco, CA 94102'
+    address: '982 Market St, San Francisco, CA 94102',
+    genre: 'J-Electro'
   },{
     title: 'J-POP Summit 2016',
     description: 'Come join various artists from Japan perform live at J-POP Summit 2016!',
     date: '07/22/16 - 07/24/16',
-    address: '2 Marina Blvd, San Francisco, CA 94123'
+    address: '2 Marina Blvd, San Francisco, CA 94123',
+    genre: 'various'
   }, {
     title: 'Gazette World Tour',
     description: 'Come see the popular Japanese metal band, Gazette perform live in the SF Bay Area!',
     date: '05/1/16',
-    address: '1290 Sutter St, San Francisco, CA 94109'
+    address: '1290 Sutter St, San Francisco, CA 94109',
+    genre: 'J-Rock'
   }, {
     title: 'KPP 5IVE YEARS MONSTER WORLD TOUR 2016',
     description: 'See International pop star, Kyary Pamyu Pamyu live in New York!',
     date: '07/25/16',
-    address: '1515 Broadway at West 44th St, New York, New York 10036'
+    address: '1515 Broadway at West 44th St, New York, New York 10036',
+    genre: 'J-Pop'
   }, {
     title: 'Waku Waku + NYC',
     description: 'Attend Waku Waku a japanese pop culture festival in New York. Waku Waku +NYC brings together the worlds of anime, manga, music, food, film, and fashion inside Brooklyn’s Greenpoint and Williamsburg neighborhoods.',
     date: '08/29/16 - 08/30/16',
-    address: '72 Noble St, Brooklyn, NY 11222'
+    address: '72 Noble St, Brooklyn, NY 11222',
+    genre: 'various'
   },{
     title: 'Anime Expo 2016',
     description: 'Attend the largest Anime convention in Northern California. Anisong Artist MICHI will be the special music guest for this year.',
     date: '07/1/16 - 07/4/16',
-    address: '1201 S Figueroa St, Los Angeles, CA 90015'
+    address: '1201 S Figueroa St, Los Angeles, CA 90015',
+    genre: 'J-pop'
   }]
 };
 

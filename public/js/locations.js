@@ -3,7 +3,7 @@ function initMap() {
     var infowindow = new google.maps.InfoWindow();
     var mapOptions = {
         center: new google.maps.LatLng(37.80, -122.41),
-        zoom: 13,
+        zoom: 12,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
@@ -95,6 +95,7 @@ function initMap() {
     $('#sf').on('click', function ()
     {
       newLocation(37.80,-122.41);
+      console.log('clicked');
     });
   }
 
