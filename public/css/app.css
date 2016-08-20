@@ -16,10 +16,6 @@
 		font-size: 16px;
 	}
 
-	/*#top_hair_1_:hover {
-		fill:green;
-	}*/
-
 	#hair {
 	  -webkit-animation: skew 4s infinite;
 	          animation: skew 4s infinite;
@@ -77,33 +73,6 @@
 			transform:rotate(360deg);
 			}
 		}
-
-
-	/*@-webkit-keyframes ckw {
-		 0% {
-	        transform: rotate(0deg);
-	    }
-	    50% {
-	    	opacity:0.5;
-	    }
-	    100% {
-	    		opacity: 0;
-	        transform: rotate(180deg);
-	    }
-		}
-
-	@keyframes ckw {
-		 0% {
-	        transform: rotate(0deg);
-	    }
-	    50% {
-	    	opacity:0.5;
-	    }
-	    100% {
-	    	opacity:0;
-	        transform: rotate(180deg);
-	    }
-		}*/
 
 
 	#text_layer {
@@ -568,7 +537,7 @@
 		font-size: 30px;
 	}
 
-	/*Animation for icons */
+	/*Animation for miku icon */
 	.music-icon:hover #earphones_miku {
 	  -webkit-animation: turn 1s;
 	          animation: turn 1s;
@@ -780,6 +749,8 @@
 	            transform: rotate(-1deg);
 	  }
 	}
+
+	/* music icon actions */
 
 	.music-icon:hover {
 	transform: scale(1.05);
