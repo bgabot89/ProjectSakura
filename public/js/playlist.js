@@ -168,16 +168,16 @@ function playTrack(index){
   //this will show a different description for the artist depending on which track is playing
   function descriptionForArtist() {
   if (currentIndex == 0) {
-    document.getElementById("md-body").innerHTML = "Chihiro Toki <br> <img src = '/static/css/avatar.png' height='200' width='200'> <br> <p> Chihiro Toki is a japanese musician. She sings the vocals for the song 'Sakura Iro No Yume', the ending song for Deemo, a rhtyhm game developed by Rayark Games. <p>"
+    document.getElementById("md-body").innerHTML = "Chihiro Toki <br> <img src = '/static/images/avatar.png' height='200' width='200'> <br> <p> Chihiro Toki is a japanese musician. She sings the vocals for the song 'Sakura Iro No Yume', the ending song for Deemo, a rhtyhm game developed by Rayark Games. <p>"
   }
   else if (currentIndex == 1) {
-    document.getElementById("md-body").innerHTML = "Nujabes <br> <img src = '/static/css/nujabes.jpg' height='200' width='200'> <br> Nujabes was a Japanese hip-hop producer. His name, is an anagram of his name, being the reverse spelling of Seba Jun. He often incorporated jazz and hip-hop beats into his music also known as jazz rap. He is best known for producing the music for the popular anime Samurai Champloo. Sadly, in February 26, 2010, Nujabes died in an automobile-related accident."
+    document.getElementById("md-body").innerHTML = "Nujabes <br> <img src = '/static/images/nujabes.jpg' height='200' width='200'> <br> Nujabes was a Japanese hip-hop producer. His name, is an anagram of his name, being the reverse spelling of Seba Jun. He often incorporated jazz and hip-hop beats into his music also known as jazz rap. He is best known for producing the music for the popular anime Samurai Champloo. Sadly, in February 26, 2010, Nujabes died in an automobile-related accident."
   }
   else if (currentIndex == 2){
-    document.getElementById("md-body").innerHTML = "Hatsune Miku <br> <img src = '/static/css/miku.jpg' height='200' width='200'> <br> Hatsune Miku is a humanoid persona voiced by a singing voice synthesizer application named Vocaloid. She is portrayed as a teenage girl with long turqouise twintails"
+    document.getElementById("md-body").innerHTML = "Hatsune Miku <br> <img src = '/static/images/miku.jpg' height='200' width='200'> <br> Hatsune Miku is a humanoid persona voiced by a singing voice synthesizer application named Vocaloid. She is portrayed as a teenage girl with long turqouise twintails"
   }
   else if (currentIndex == 3){
-    document.getElementById("md-body").innerHTML = "Asian Kung-Fu Generation <br> <img src = '/static/css/kung-fu.jpg' height='200' width='200'> <br> Asian Kung-Fu Generation is a japanese rock band in Yokohama, Japan. The band's musical style is influenced by seminal Western punk and alternative rock acts in conjunction with their own local Japanese indie rock background."
+    document.getElementById("md-body").innerHTML = "Asian Kung-Fu Generation <br> <img src = '/static/images/kung-fu.jpg' height='200' width='200'> <br> Asian Kung-Fu Generation is a japanese rock band in Yokohama, Japan. The band's musical style is influenced by seminal Western punk and alternative rock acts in conjunction with their own local Japanese indie rock background."
   }
 }
   descriptionForArtist();
